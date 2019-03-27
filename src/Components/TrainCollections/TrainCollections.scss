@@ -1,0 +1,88 @@
+.Train-collection {
+    text-align: center;
+    background-color: rgba(44,44,44, 0.5);
+    padding-bottom: 1em;
+
+    .Train-model {
+        img {
+            width: 100%;
+        }
+    }
+    .Description {
+        p {
+            color: #000000;
+        }
+        .to-page-model {
+            a {
+                p {
+                    background-color: #ffffff;
+                    color: #000000;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 1em;
+                    //width: 80vw;
+                    margin-left: 2em;
+                    margin-right: 2em;
+                }
+            }
+
+            a:hover {
+                text-decoration: none;
+                p:hover {
+                    color:#ffffff;
+                    background-color: #000000;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    .Train-collection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+
+        .Train-model {
+            width: 50vw;
+        }
+
+        .Description {
+            width: 50vw;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .Train-collection {
+        flex-direction: column;
+        justify-content: flex-start;
+        .Train-model {
+            width: 25vw;
+        }
+
+        .Description {
+            width: 25vw;
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Train-collection {
+        
+        .Train-model {
+            width: 25vw;
+        }
+
+        .Description {
+            width: 25vw;
+            //padding:2em;
+        }
+    }
+}

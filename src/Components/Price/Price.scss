@@ -1,0 +1,69 @@
+.Price {
+    text-align: center;
+    background-color: rgba(44,44,44, 0.5);
+    padding-bottom: 1em;
+
+    .Price-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .Price-info {
+        margin-top: 1em;
+
+       
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    .Price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+
+        .Price-img {
+            width: 50vw;
+        }
+
+        .Price-info {
+            width: 50vw;
+
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    .Price {
+        flex-direction: column;
+        justify-content: flex-start;
+        .Price-img {
+            width: 25vw;
+        }
+
+        .Price-info {
+            width: 25vw;
+            
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .Price {
+        
+        .Price-img {
+            width: 25vw;
+        }
+
+        .Price-info {
+            width: 25vw;
+            padding: 2em;
+            
+        }
+    }
+}
