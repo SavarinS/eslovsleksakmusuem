@@ -7,9 +7,9 @@ class Navigation extends Component {
 
     render(){
         return (
-            <div id="Navigation">
+            
               <Navbar expand="lg">
-              <div className="Page-title">
+              <div className="page-title">
                   <Navbar.Brand ><NavLink to="/"> Eslöv Leksakmusuem </NavLink></Navbar.Brand>
               </div>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,7 +25,7 @@ class Navigation extends Component {
     
                 </Navbar.Collapse>
               </Navbar>
-            </div>
+            
         )
     }
 

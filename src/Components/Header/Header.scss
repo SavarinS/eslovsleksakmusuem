@@ -5,4 +5,131 @@
     background-size: cover;
     max-width: 100%;
     min-height: 100%;
+
+    h2 {
+        letter-spacing: 2px;
+        margin: 0;
+        text-shadow: 2px 2px 6px #000;
+        text-align: center;
+        color: white;
+        line-height: 200%;
+        font-size: 1em;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+        margin: 0;
+        text-shadow: 2px 2px 6px #000;
+        text-align: center;
+        color: white;
+        line-height: 200%;
+        font-size: 1.5em;
+    }
+}
+
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    //min-height: 100vh;
+}
+
+//Styling opening hour button
+.show-info {
+    margin-top: 3em;
+    .opening-hour{
+        text-align: center;
+
+        h3{
+            margin: 2em;
+            font-size: 1.2em;
+
+            a {
+                background-color: #ffffff;
+                color: #000000;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 0.7em 2em;
+                border-radius: 20px;
+                
+                
+            }
+
+            a:hover{
+                background-color: #000000;
+                color: #ffffff;
+            }
+            
+        }
+    }
+
+
+    
+}
+
+//Styling find us button
+.Find-us-button {
+    margin-top: 3em;
+    text-align: center;
+
+    
+
+        h3{
+            margin: 2em;
+            font-size: 1.2em;
+
+            a {
+                background-color: rgb(191,177,176);
+                color: #A63F48;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-decoration: none;
+                padding: 0.7em 2em;
+                border-radius: 20px;
+            }
+            
+            a:hover{
+                background-color: #A63F48;
+                color: rgb(191,177,176);
+            }
+        
+    }
+
+
+    
+}
+
+//Breakpoints
+@media only screen and (min-width: 600px){
+  .hero-image{
+      h1{
+          font-size: 2em;
+      }
+
+      h2{
+          font-size: 1.5em;
+      }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+    .main-header{
+        display: flex;
+    }
+
+    .hero-image{
+        h1{
+            font-size: 2.2em;
+        }
+  
+        h2{
+            font-size: 1.8em;
+        }
+    }
 }

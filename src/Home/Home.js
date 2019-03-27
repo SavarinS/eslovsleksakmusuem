@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Headers from '../Components/Header/Header';
+import { Container } from 'react-bootstrap';
 //import GridCollections from '../Components/GridCollections/GridCollections';
 //import Information from '../Components/Info/Info';
 //import Footer from '../Components/Footer/Footer';
