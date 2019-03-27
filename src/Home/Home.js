@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Headers from '../Components/Header/Header';
-import { Container } from 'react-bootstrap';
+
 //import GridCollections from '../Components/GridCollections/GridCollections';
 //import Information from '../Components/Info/Info';
 //import Footer from '../Components/Footer/Footer';
 //import MainFooter from '../Components/MainFooter/MainFooter';
 //import Nav from '../Components/Nav/Nav';
 import './Home.scss';
+import Review from '../Components/Reviews/Reviews';
 //import Subscription from '../Components/Subscription/Subscription';
 //import Exhibit from '../Components/Exhibit/Exhibit';
 //import Activity from '../Components/Activity/Activity';
@@ -25,6 +26,7 @@ class Home extends Component {
             return (
                 <div id="container">
                 <Headers/>
+                <Review/>
                     {/* <NavTest/> */}
                     {/* <GridCollections/> */}
                     {/* <Subscription/> */}
