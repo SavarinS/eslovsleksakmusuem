@@ -9,6 +9,7 @@ import Headers from '../Components/Header/Header';
 import './Home.scss';
 import Review from '../Components/Reviews/Reviews';
 import Collections from '../Components/Collections/Collections';
+import TrainCollection from '../Components/TrainCollections/TrainCollections';
 //import Subscription from '../Components/Subscription/Subscription';
 //import Exhibit from '../Components/Exhibit/Exhibit';
 //import Activity from '../Components/Activity/Activity';
@@ -29,18 +30,22 @@ class Home extends Component {
                 <Headers/>
                 <Collections/>
                 <Review/>
-                    {/* <NavTest/> */}
-                    {/* <GridCollections/> */}
-                    {/* <Subscription/> */}
-                    <div className="Page-col">
-                        {/* <Carousel/> */}
-                        <div className="Sidebar">
-                            {/* <Exhibit/>
-                            <Activity/> */}
-                        </div>
-                    </div>
+                <div className="Grid1">
+                            <div className="column">
+                               <TrainCollection/>
+                                
+                            </div>
+                    
 
-                    {/* <MainFooter/> */}
+                            <div className="column">
+                                {/* <OpeningTime/> */}
+                                
+                            </div>
+
+                            <div className="column">
+                                {/* <Price/> */}
+                            </div>
+                        </div>
 
                     
                 </div>
