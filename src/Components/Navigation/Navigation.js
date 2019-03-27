@@ -14,7 +14,7 @@ class Navigation extends Component {
               </div>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav className="mr-autot">
     
                 <NavLink to="omoss"> Om oss</NavLink>
                 <NavLink to="samligar"> Samligar</NavLink>
