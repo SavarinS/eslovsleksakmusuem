@@ -8,6 +8,7 @@ import Headers from '../Components/Header/Header';
 //import Nav from '../Components/Nav/Nav';
 import './Home.scss';
 import Review from '../Components/Reviews/Reviews';
+import Collections from '../Components/Collections/Collections';
 //import Subscription from '../Components/Subscription/Subscription';
 //import Exhibit from '../Components/Exhibit/Exhibit';
 //import Activity from '../Components/Activity/Activity';
@@ -26,6 +27,7 @@ class Home extends Component {
             return (
                 <div id="container">
                 <Headers/>
+                <Collections/>
                 <Review/>
                     {/* <NavTest/> */}
                     {/* <GridCollections/> */}

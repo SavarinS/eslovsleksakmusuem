@@ -49,7 +49,7 @@ class Header extends Component {
                                         <h2>Idag är {days[this.state.day]} och vi öppnar fram till 16.00</h2>
                                         <h2>{this.state.hour >= 15 ? 'Vi stänger om en timmer' : null }</h2>
                                         <div className="Find-us-button">
-                                            <h3><NavLink to="Kontakt">Hitta oss</NavLink></h3>
+                                            <NavLink to="Kontakt">Hitta oss</NavLink>
                                         </div>
                                 
                                         
@@ -74,7 +74,7 @@ class Header extends Component {
                                         <h2 className="day">Idag är {days[this.state.day]} och vi stänger.</h2>
 
                                         <div className="opening-hour">
-                                            <h3><NavLink to="Kontakt">Öppettid</NavLink></h3>
+                                            <NavLink to="Kontakt">Öppettid</NavLink>
                                         </div>
 
                                     </div>
