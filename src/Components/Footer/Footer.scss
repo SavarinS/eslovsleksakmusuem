@@ -1,0 +1,41 @@
+//Styling footer
+.footer {
+    text-align: center;
+    background-color: #6D6E70;
+    .socialMedia {
+        padding-top:2em;
+        display: flex;
+        justify-content: space-evenly;
+
+        .fab {
+            font-size: 3em;
+            color: #ffffff;
+            
+        }
+    }
+
+    .footer-contact{
+        padding: 1em;
+        p {
+            color: #ffffff;
+            font-size: 0.9em;
+    
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 600px){
+    .footer {
+        .socialMedia {
+            justify-content: center;
+
+            .fab {
+                padding-left: 1em;
+                padding-right:1em;
+                
+            }
+        }
+    }
+}

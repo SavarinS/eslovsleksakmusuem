@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Home from './Home/Home';
+import About from './Pages/About/About';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <div>
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/omoss" component={About} exact />
 
         </Switch>
 

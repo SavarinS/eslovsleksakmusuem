@@ -48,7 +48,7 @@ class Header extends Component {
                                         
                                         <h2>Idag är {days[this.state.day]} och vi öppnar fram till 16.00</h2>
                                         <h2>{this.state.hour >= 15 ? 'Vi stänger om en timmer' : null }</h2>
-                                        <div className="Find-us-button">
+                                        <div className="info-button">
                                             <NavLink to="Kontakt">Hitta oss</NavLink>
                                         </div>
                                 
@@ -63,7 +63,7 @@ class Header extends Component {
             return (
                
                     <div className="header">
-            
+                                <Navigation/>
                             <div className="hero-image">
                                 <div className="hero-text">
                                     <h2>Drömer du också om att bli barn på nytt!</h2>
@@ -73,7 +73,7 @@ class Header extends Component {
                                     <div className="show-info">
                                         <h2 className="day">Idag är {days[this.state.day]} och vi stänger.</h2>
 
-                                        <div className="opening-hour">
+                                        <div className="info-button">
                                             <NavLink to="Kontakt">Öppettid</NavLink>
                                         </div>
 

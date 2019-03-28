@@ -19,7 +19,6 @@ class Navigation extends Component {
                 <NavLink to="omoss"> Om oss</NavLink>
                 <NavLink to="samligar"> Samligar</NavLink>
                 <NavLink to="modeljarnvagen"> Modeljärnvägen</NavLink>
-                <NavLink to="galleri"> Galleri</NavLink>
                 <NavLink to="kontakt"> Kontakt</NavLink>
                 </Nav>
     

@@ -1,0 +1,43 @@
+.Exhibit {
+    text-align: center;
+    margin: 1em;
+    padding: 3em 1em;
+
+    .Exhibit-title {
+        padding: 1em;
+        .fa-calendar-alt {
+            font-size: 2em;
+            padding:1em;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-style: bold;
+        }
+    }
+    .Exhibit-content {
+
+        .E-title {
+            text-transform: uppercase;
+            font-style: bold;
+            font-family: 'Coiny', cursive;
+        }
+
+        
+    }
+    
+}
+
+@media only screen and(min-width: 600px){
+    .Exhibit {
+        margin: 0;
+        padding: 0;
+        width: 40vw;
+        //background-color: bisque;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+}

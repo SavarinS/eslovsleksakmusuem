@@ -6,6 +6,11 @@ import Collections from '../Components/Collections/Collections';
 import TrainCollection from '../Components/TrainCollections/TrainCollections';
 import OpeningTime from '../Components/OpeningTime/OpeningTime';
 import Price from '../Components/Price/Price';
+import Subscription from '../Components/Subscription/Subscription';
+import Carousel from '../Components/Carousel/Carousel';
+import Exhibit from '../Components/Exhitbit/Exhibit';
+import Activity from '../Components/Activity/Activity';
+import MainFooter from '../Components/Footer/Footer';
 
 
 
@@ -23,7 +28,7 @@ class Home extends Component {
                 <Headers/>
                 <Collections/>
                 <Review/>
-                <div className="Grid1">
+                        <div className="Grid1">
                             <div className="column">
                                <TrainCollection/>
                                 
@@ -38,10 +43,23 @@ class Home extends Component {
                             <div className="column">
                                 <Price/>
                             </div>
+                        </div> 
+                        {/* Grid1 */}
+
+                        <Subscription/>
+
+                        <div className="Page-col">
+                        <Carousel/>
+                            <div className="Sidebar">
+                                <Exhibit/>
+                                <Activity/>
+                            </div>
                         </div>
 
-                    
+                        <MainFooter/>
                 </div>
+
+                
             );
         }
 

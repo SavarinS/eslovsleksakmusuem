@@ -1,0 +1,47 @@
+.Slide {
+    .Caption-Slide {
+        margin: 2em;
+    }
+
+    .Slide-button {
+
+        margin: 2em;
+        
+        a{
+            p {
+                color: #ffffff;
+                background-color: #000000;
+                text-align: center;
+               
+            }
+        }
+        
+        a:hover {
+            text-decoration: none;
+            p:hover {
+                color: #000000;
+                background-color: #d9d9d9;
+            }
+            
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .Slide {
+     width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Slide-button {
+            width:20vw;
+        }
+    }
+}
