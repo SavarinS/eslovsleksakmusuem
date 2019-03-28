@@ -30,26 +30,14 @@
         
        padding: 2em;
         
+       .content-row {
+           img{
+               width:100%;
+           }
+       }
     }
 
-    .content2{
-        padding: 1em;
-        background-color: #D9D9D9;
-    
-        .toy-row {
-            padding:1em;
-    
-            .fas, .fab {
-                background-color: #ffffff;
-                font-size: 4em;
-                padding: 1em;
-                margin: 0.5em;
-                border-radius: 100px;
-            }
-        }
-        
-    
-    }
+  
     
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Partners.scss';
 
 class Partners extends Component {
     render (){

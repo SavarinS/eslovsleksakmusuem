@@ -1,0 +1,68 @@
+.Main-content {
+   
+    
+    h1 {
+        text-align: center;
+    }
+
+    .Collections-content{
+        text-align: center;
+        padding: 2em;
+    
+        .featureImage {
+            img {
+                width:100%;
+            }
+        }
+
+    
+    }
+    
+    .Collection-nav {
+        background-image: url('../../img/Playmobil.jpg');
+        min-height: 30vh;
+        background-size: cover;
+        background-position: center;
+        max-width: 100%;
+    }
+    
+}
+
+
+//Break points
+@media only screen and (min-width: 600px) {
+    .Collections-content{
+        
+    
+        .featureImage {
+            width: 70vw;
+            
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Collections-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .featureImage {
+            width: 30vw;
+            
+        }
+
+        .Collection-list {
+            width: 40vw;
+            margin:1em;
+        }
+    
+    
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
