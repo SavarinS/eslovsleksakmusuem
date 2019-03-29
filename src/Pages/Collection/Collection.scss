@@ -1,68 +1,148 @@
-.Main-content {
-   
-    
-    h1 {
-        text-align: center;
-    }
+.main-content {
 
-    .Collections-content{
-        text-align: center;
-        padding: 2em;
+    .pageTitle {
+        margin-top: 2em;
+        h1 {
+            text-align: center;
+        }
+
+    }
     
+
+    .collections-content {
+        text-align: center;
+        
+        
+
         .featureImage {
             img {
-                width:100%;
+                width: 100%;
             }
         }
 
-    
+        .collection-list{
+            padding:2em;
+
+        }
+
+        .collection-list:nth-child(even) {
+            background-color: #D9D9D9
+        }
+
+
     }
-    
-    .Collection-nav {
-        background-image: url('../../img/Playmobil.jpg');
+
+    .collection-nav {
+        background-image: url('../../img/adi-suryanata-533399-unsplash.jpg');
         min-height: 30vh;
         background-size: cover;
         background-position: center;
         max-width: 100%;
-    }
-    
+
+        
+            .caption {
+                display: flex;
+                justify-content: center;
+                padding:2em;
+                flex-wrap: wrap;
+                text-align: center;
+                
+        
+                h3 {
+                    color: #ffffff;
+                    letter-spacing: 4px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
 }
 
 
 //Break points
 @media only screen and (min-width: 600px) {
-    .Collections-content{
+    .main-content {
+
+    
+    .collections-content {
         
-    
         .featureImage {
-            width: 70vw;
-            
+            width: 30vw;
+
         }
-    
+
+        .collection-list {
+            display: flex;
+            align-items: center;
+
+            .collection-desc {
+                margin-right:2em;
+            }
+        }
+
     }
+
+    .collection-nav{
+        min-height: 50vh;
+    }
+}
 }
 
 @media only screen and (min-width: 900px) {
-    .Collections-content{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-        .featureImage {
-            width: 30vw;
+    .main-content {
+
+        .collection-nav {
+            min-height: 70vh;
+
+            .caption {
+                width: 40vw;
+                margin:2em;
+                text-align: left;
+                h3 {
+                    font-size: 1.2em;
+                    line-height: 200%;
+                }
+            }
+        }
+
+        .collections-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .featureImage {
+                width: 20vw;
+                
+
+            }
+
+            .collection-list {
+                //width: 40vw;
+                //margin: 1em;
+                padding:2em;
+                display: flex;
+
+                .collection-row{
+                    padding:2em;
+
+                    .collection-desc {
+                        margin-top: 2em;
+                        p {
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+
             
         }
 
-        .Collection-list {
-            width: 40vw;
-            margin:1em;
-        }
-    
-    
-}
+
+
+
+
+    }
 }
 
-@media only screen and (min-width: 1200px) {
-    
-}
+@media only screen and (min-width: 1200px) {}

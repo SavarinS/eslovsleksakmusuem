@@ -1,0 +1,112 @@
+.trains-content{
+    text-align: justify;
+    padding: 2em;
+
+    .train-title {
+        margin-bottom: 2em;
+        text-align: center;
+        h1{
+            font-size: 1.9em;
+        }
+    }
+
+    .train-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        img {
+            width:100%;
+        }
+        
+    }
+
+    
+}
+
+.train-nav {
+    background-image: url('../../img/rijaluddin-abdur-rozzaq-1208836-unsplash.jpg');
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .caption {
+        padding: 2em;
+        text-align: justify;
+        h3 {
+            color: #ffffff;
+            font-size: 1em;
+            letter-spacing: 4px;
+            line-height: 200%;
+        }
+    }
+}
+
+//Break point
+@media only screen and (min-width: 400px) {
+   
+.train-nav {
+
+    .caption {
+        padding: 2em;
+        text-align: justify;
+    }
+
+}
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .trains-content{
+        padding:3em;
+
+      .train-desc {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+             column-count: 2;
+             -webkit-column-width: 100px;
+     -moz-column-width: 100px;
+          column-width: 100px;
+          -webkit-column-gap: 4em;
+     -moz-column-gap: 4em;
+          column-gap: 4em;
+          -moz-column-fill: auto;
+       column-fill: auto;
+   }
+      
+
+        .train-img {
+            width:40vw;
+            height: 30vh;
+        }
+
+    }
+    .train-nav {
+        min-height: 50vh;
+        .caption {
+            padding: 2.5em;
+            text-align: justify;
+    
+            h3 {
+                
+                font-size: 1.2em;
+                
+            }
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .trains-content{
+        padding:5em;
+    }
+    .train-nav {
+        min-height: 70vh;
+    }
+}

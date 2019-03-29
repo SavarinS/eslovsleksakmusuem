@@ -35,35 +35,47 @@ class Collections extends Component {
            return <div> Data is not loaded. Loading ...</div>;
         } else {
             return (
-                <div className="Collections-page">
-                    <div className="Main-content">
-                    <div className="Collection-nav">
-                        <Navigation/>
-                    </div>
-                    <h1> Samligar </h1>
-                        <div className="Collections-content">
-                           
+                <div className="collections-page">
+                    <div className="main-content">
+                        <div className="collection-nav">
+                            <Navigation/>
+
+                            <div className="caption">
+                           <h3>500 meter modelljärnväg, 400 Barbiedockor, 4 000 modellbilar, 9 000 tennsoldater och 1 500 uppbyggda Legosatser.</h3>
+                            </div>
+                        </div>
+
+                        <div className="pageTitle">
+                            <h1> Samligar </h1>
+                        </div>
+                    
+                        <div className="collections-content">
+                        
                             
                             { this.state.items.map(post => {
                                 return (
-                                    <div className="Collection-list">
-                                        <div key={post.id} className="Collection-title">
-                                            <h3>{post.title.rendered} </h3>
+                                    <div className="collection-list">
+                                        <div className="collection-row">
+                                            <div key={post.id} className="collection-title">
+                                                <h3>{post.title.rendered} </h3>
+                                            </div>
+
+                                            <div className="collection-desc">
+                                                <p>{post.content.rendered} </p>
+                                            </div>
                                         </div>
 
-                                        <div className="Collection-img">
+                                        <div className="collection-img">
                                             <div className="featureImage">
                                              {post.featured_media ? 
                                             
-							 <img src={post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} alt="Collection"/>
-						: null}
-                        </div>
+							                    <img src={post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} alt="Collection"/>
+						                        : null}
+                                            </div>
                                         
                                         </div>
 
-                                        <div className="Collection-desc">
-                                            <p>{post.content.rendered} </p>
-                                        </div>
+                                        
 
                                         
                                     </div>
@@ -72,6 +84,7 @@ class Collections extends Component {
                         
                         </div>{/*Collections-content*/}
                     </div> {/*Main-content*/}
+
                     <div className="Main-footer">
                         <Footer />
                     </div>{/*Main-footer*/}

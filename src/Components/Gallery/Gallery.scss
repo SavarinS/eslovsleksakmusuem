@@ -1,0 +1,43 @@
+.train-model-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    .gallery {
+        width:100vw;
+    
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//Breakpoint
+@media only screen and (min-width: 600px) {
+    .train-model-gallery {
+        align-items: center;
+    
+        .gallery {
+            width:40vw;
+            margin:1em;
+        
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .train-model-gallery {
+     margin-bottom: 5em;
+     margin-left: 3em;
+     margin-right: 3em;
+
+        .gallery {
+            width:25vw;
+            
+        
+           
+        }
+    }
+}
+
