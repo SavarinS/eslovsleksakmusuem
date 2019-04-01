@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import About from './Pages/About/About';
 import Collection from './Pages/Collection/Collection';
 import TrainsModel from './Pages/TrainsModel/TrainsModel';
+import Contact from './Pages/Contact/Contact';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route path="/omoss" component={About} exact />
           <Route path="/samligar" component={Collection} exact />
           <Route path="/modeljarnvagen" component={TrainsModel} exact />
+          <Route path="/kontakt" component={Contact} exact />
           {/* <Route component={NotFound}/> */}
 
         </Switch>
