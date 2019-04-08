@@ -13,8 +13,8 @@ class OpeningTime extends Component {
 
                 <div className="Opening-time">
                 
-                    <p>Öppettid</p>
-                    <p>onsdag - lödag kl.12 - 16</p>
+                    <h4>Öppettid</h4>
+                    <h4>onsdag - lödag kl.12 - 16</h4>
                 
                 </div>
 

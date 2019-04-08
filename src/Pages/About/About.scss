@@ -1,36 +1,42 @@
-.About-nav {
+.about-header {
     background-image: url('../../img/ivan-diaz-413885-unsplash.jpg');
     min-height: 30vh;
     background-size: cover;
     background-position: center;
     max-width: 100%;
-    h3 {
-        font-size: 1em;
-    }
+    padding: 2em;
+    
 
     .caption {
         display: flex;
         justify-content: center;
-        padding:2em;
+        margin-top:2em;
         flex-wrap: wrap;
 
-        h3 {
+        h2 {
             color: #ffffff;
             letter-spacing: 4px;
         }
     }
 }
 
-.About-content{
-    text-align: center;
-    margin-top: 3em;
-    
+.about {
+    padding:0;
+    margin: 0;
+}
 
+.main-content{
+    padding:2em;
+    h1 {
+        text-align: center;
+    }
     .content1 {
-        
-       padding: 2em;
+       
         
        .content-row {
+           p {
+               text-align: justify;
+           }
            img{
                width:100%;
            }
@@ -45,7 +51,7 @@
 
 //Break points
 @media only screen and (min-width: 600px) {
-.About-nav{
+.about-header{
     min-height: 50vh;
     .caption {
         padding:2.5em;
@@ -54,7 +60,7 @@
 }
 @media only screen and (min-width: 900px) {
 
-    .About-nav{
+    .about-header{
         min-height: 70vh;
         .caption {
             width: 40vw;
@@ -63,6 +69,20 @@
                 font-size: 1.2em;
                 line-height: 200%;
             }
+        }
+    }
+
+    .main-content {
+        padding: 4em;
+
+        .content1 {
+            
+           .content-row {
+               text-align: center;
+               img{
+                   width:50vw;
+               }
+           }
         }
     }
     .About-content{
@@ -104,5 +124,17 @@
     }
 }
 @media only screen and (min-width: 1200px){
-    
+    .main-content {
+        padding: 6em;
+
+        .content1 {
+            
+           .content-row {
+               
+               img{
+                   width:30vw;
+               }
+           }
+        }
+    }
 }

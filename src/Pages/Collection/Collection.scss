@@ -1,133 +1,136 @@
-.main-content {
+.collections {
+    padding: 0;
+    margin: 0;
 
-    .pageTitle {
-        margin-top: 2em;
-        h1 {
-            text-align: center;
-        }
-
-    }
-    
-
-    .collections-content {
-        text-align: center;
-        
-        
-
-        .featureImage {
-            img {
-                width: 100%;
-            }
-        }
-
-        .collection-list{
-            padding:2em;
-
-        }
-
-        .collection-list:nth-child(even) {
-            background-color: #D9D9D9
-        }
-
-
-    }
-
-    .collection-nav {
+    .collections-header {
         background-image: url('../../img/adi-suryanata-533399-unsplash.jpg');
         min-height: 30vh;
         background-size: cover;
         background-position: center;
         max-width: 100%;
+        padding: 2em;
 
-        
-            .caption {
-                display: flex;
-                justify-content: center;
-                padding:2em;
-                flex-wrap: wrap;
-                text-align: center;
-                
-        
-                h3 {
-                    color: #ffffff;
-                    letter-spacing: 4px;
-                    font-size: 1.2em;
-                }
+
+        .caption {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+            h3 {
+                color: #ffffff;
+                letter-spacing: 4px;
+
             }
         }
+    }
 
+    .main-collections-content {
+        h1 {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .collections-content {
+            h3 {
+                text-align: center;
+            }
+
+
+
+            .collection-img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .collection-list {
+                padding: 2em;
+                text-align: justify;
+
+            }
+
+            .collection-list:nth-child(even) {
+                background-color: #D9D9D9
+            }
+
+
+        }
+    }
 }
-
 
 //Break points
 @media only screen and (min-width: 600px) {
-    .main-content {
+    .main-collections-content {
 
-    
-    .collections-content {
-        
-        .featureImage {
-            width: 30vw;
 
-        }
+        .collections-content {
 
-        .collection-list {
-            display: flex;
-            align-items: center;
+            .collection-img {
+                width: 40vw;
 
-            .collection-desc {
-                margin-right:2em;
             }
+
+            .collection-list {
+                display: flex;
+                align-items: center;
+
+                .collection-desc {
+                    margin-right: 2em;
+                }
+            }
+
         }
 
     }
 
-    .collection-nav{
-        min-height: 50vh;
+    .collections {
+        .collections-header {
+            min-height: 50vh;
+        }
     }
-}
 }
 
 @media only screen and (min-width: 900px) {
-    .main-content {
-
-        .collection-nav {
+    .collections {
+        .collections-header {
             min-height: 70vh;
 
             .caption {
                 width: 40vw;
-                margin:2em;
+                margin: 2em;
                 text-align: left;
+
                 h3 {
-                    font-size: 1.2em;
                     line-height: 200%;
                 }
             }
         }
-
+    }
+    .main-collections-content {
+        padding: 4em;
+        
         .collections-content {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
 
-            .featureImage {
-                width: 20vw;
-                
-
-            }
 
             .collection-list {
                 //width: 40vw;
                 //margin: 1em;
-                padding:2em;
+                padding: 2em;
                 display: flex;
 
-                .collection-row{
-                    padding:2em;
+                .collection-row {
+                    padding: 2em;
 
                     .collection-desc {
                         margin-top: 2em;
+
                         p {
                             text-align: justify;
                         }
@@ -135,7 +138,7 @@
                 }
             }
 
-            
+
         }
 
 
@@ -145,4 +148,8 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .main-collections-content {
+        padding: 6em;
+    }
+}

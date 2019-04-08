@@ -4,26 +4,47 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
 
 
-body, html { overflow-x:hidden; }
+//body, html { overflow-x:hidden; }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bree Serif', serif;
   letter-spacing: 2px;
   color: #404040;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+// * {
+// 	border: 1px solid red;
+// }
+
 p{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 3px;
   line-height: 300%;
   color: #000000;
+  font-size: 16px;
 }
 
-.Main-content {
+.main-content {
   display: flex;
   flex-direction: column;
+  padding:2em;
 
 }
-
+.App, .full-width-container {
+  padding: 0;
+  margin: 0;
+}
 
 @media only screen and (max-width: 599px){
   
@@ -35,6 +56,30 @@ p{
 }
 
 @media only screen and (min-width: 900px){
- 
+  h1 {
+    font-size: 2.5em;
+  }
+ h2 {
+   font-size: 2em;
+ }
+
+ h3 {
+   font-size: 1.5em;
+ }
+
+ p {
+  font-size: 1.2em;
+ }
+}
+@media only screen and (min-width: 1200px){
+  h1 {
+    font-size: 3em;
+  }
+ h2 {
+   font-size: 2.5em;
+ }
+ h3 {
+  font-size: 2em;
 }
 
+}

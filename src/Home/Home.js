@@ -24,7 +24,7 @@ class Home extends Component {
     render () {
 
             return (
-                <div id="container">
+                <div id="home">
                 <Headers/>
                 <Collections/>
                 <Review/>
@@ -57,7 +57,7 @@ class Home extends Component {
                         </div>
 
                         <MainFooter/>
-                </div>
+               </div>
 
                 
             );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Footer from '../../Components/Footer/Footer';
 import './Collection.scss';
 import Navigation from '../../Components/Navigation/Navigation';
+import ReactHtmlParser from 'react-html-parser';
 
 
 
@@ -9,7 +10,14 @@ class Collections extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [],
+            items: {
+                title:{
+                    rendered:''
+                },
+                content:{
+                    rendered:''
+                },
+            },
             isLoaded: false, //if the items is loaded
         }
     }
@@ -29,49 +37,50 @@ class Collections extends Component {
 
     render() {
         var { isLoaded } = this.state; // can access to isLoaded and items in constructor method 
-     
         
+
         if (!isLoaded) {
            return <div> Data is not loaded. Loading ...</div>;
         } else {
             return (
-                <div className="collections-page">
-                    <div className="main-content">
-                        <div className="collection-nav">
+                <div className="collections">
+                    
+                        <div className="collections-header">
                             <Navigation/>
 
                             <div className="caption">
-                           <h3>500 meter modelljärnväg, 400 Barbiedockor, 4 000 modellbilar, 9 000 tennsoldater och 1 500 uppbyggda Legosatser.</h3>
+                                <h3>500 meter modelljärnväg, 400 Barbiedockor, 4 000 modellbilar, 9 000 tennsoldater och 1 500 uppbyggda Legosatser.</h3>
                             </div>
                         </div>
-
-                        <div className="pageTitle">
+                        {/* collections-header */}
+                        <div className="main-collections-content">
+                        
                             <h1> Samligar </h1>
-                        </div>
+                        
                     
                         <div className="collections-content">
                         
                             
                             { this.state.items.map(post => {
                                 return (
-                                    <div className="collection-list">
+                                    <div key={post.id} className="collection-list">
                                         <div className="collection-row">
-                                            <div key={post.id} className="collection-title">
+                                            <div className="title">
                                                 <h3>{post.title.rendered} </h3>
                                             </div>
 
                                             <div className="collection-desc">
-                                                <p>{post.content.rendered} </p>
+                                                { ReactHtmlParser(post.content.rendered)}
                                             </div>
                                         </div>
 
                                         <div className="collection-img">
-                                            <div className="featureImage">
+                                
                                              {post.featured_media ? 
                                             
 							                    <img src={post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} alt="Collection"/>
 						                        : null}
-                                            </div>
+                                            
                                         
                                         </div>
 
@@ -83,11 +92,10 @@ class Collections extends Component {
                             })}   
                         
                         </div>{/*Collections-content*/}
-                    </div> {/*Main-content*/}
+                    </div> 
 
-                    <div className="Main-footer">
                         <Footer />
-                    </div>{/*Main-footer*/}
+                    
             </div> 
             
             );

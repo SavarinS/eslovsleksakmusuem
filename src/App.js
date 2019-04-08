@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-        <div>
+        <div className="full-width-container">
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/omoss" component={About} exact />

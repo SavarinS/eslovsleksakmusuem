@@ -2,10 +2,11 @@
 .footer {
     text-align: center;
     background-color: #6D6E70;
+    padding:2em;
     .socialMedia {
-        padding-top:2em;
         display: flex;
         justify-content: space-evenly;
+        
 
         .fab {
             font-size: 3em;
@@ -15,10 +16,10 @@
     }
 
     .footer-contact{
-        padding: 1em;
         p {
             color: #ffffff;
             font-size: 0.9em;
+
     
         }
     }

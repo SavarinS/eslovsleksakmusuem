@@ -1,20 +1,10 @@
-.contact-content{
-    text-align: justify;
-    
-    
 
-    .contact-desc{
-        background-color: #d9d9d9;
-        //padding: 2em;
-        
-    }
+.contact {
+    padding:0;
+    margin: 0;
 
-    .column {
-        //padding:2em;
-    }
-}
 
-.contact-nav {
+.contact-header {
     background-image: url('../../img/claudio-luiz-castro-1394287-unsplash.jpg');
     min-height: 30vh;
     background-size: cover;
@@ -22,67 +12,117 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    padding:2em;
 
     .caption {
         display: flex;
         justify-content: center;
-        padding:2em;
         flex-wrap: wrap;
+        margin-top:2em;
 
         h3 {
             color: #ffffff;
             letter-spacing: 4px;
-            font-size: 1em;
+            
         }
     }
     
 }
 
+
+    .opening-time, .price, .contact-us {
+        border-bottom-style: solid;
+        margin-bottom:2em;
+
+        h3 {
+            text-align: center;
+        }
+    } 
+
+    .title{
+        margin-bottom:1em;
+    }
+
+}
+
+
+
 @media only screen and (min-width: 600px) {
-    .contact-nav {
-        min-height: 50vh;
+    .contact {
+        .contact-header {
+            min-height: 50vh;
 
         .caption {
             
             h3 {
-                font-size: 1.2em;
                 text-align: center;
             }
         }
+        }
+    }
+   
+    .main-content{
+        .contact-desc{
+            .contact-info {
+                p {
+                    padding:0 3em 3em 3em;
+                }
+            }
+            
+        }
+    
+        
     }
 
 }
 @media only screen and (min-width: 900px) {
 
+    .main-content{
+        .column1 {
+            display:flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
     
-    .contact-nav {
-        min-height: 70vh;
+        
+    }
+
+    .contact {
+        .contact-header {
+            min-height: 70vh;
 
         .caption {
             margin-top:4.5em;
-
-            h3 {
-                font-size: 1.5em;
-                
-            }
+            
+        }
         }
     }
-
-    .column{
-        display:flex;
-    }
+    
 }
 @media only screen and (min-width: 1200px){
-    .contact-nav {
-       
+   
+    .main-content{
+        .column1{
+            justify-content: space-around;
+        }
+        .column2 {
+            display:flex;
+            justify-content: space-around;
+            text-align: center;
 
-        .caption {
-            
-            h3 {
-                font-size: 2em;
-                
+            .address{
+                width: 40vw;
+            }
+
+            .contact-us {
+                border-bottom: none;
             }
         }
+    
+        
     }
+   
+
+   
      
 }

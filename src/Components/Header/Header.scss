@@ -5,6 +5,8 @@
     background-size: cover;
     max-width: 100%;
     min-height: 100%;
+    padding: 2em 1em;
+    margin: 0;
 
     h2 {
         letter-spacing: 2px;
@@ -13,7 +15,6 @@
         text-align: center;
         color: white;
         line-height: 200%;
-        font-size: 1em;
     }
 
     h1 {
@@ -23,7 +24,6 @@
         text-align: center;
         color: white;
         line-height: 200%;
-        font-size: 1.5em;
     }
 }
 
@@ -33,69 +33,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
-    //min-height: 100vh;
-}
-
-//Styling opening hour button
-.show-info {
-    margin-top: 3em;
-    .opening-hour{
-        text-align: center;
-
-        h3{
-            margin: 2em;
-            font-size: 1.2em;
-
-            a {
-                background-color: #ffffff;
-                color: #000000;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                font-weight: 700;
-                text-decoration: none;
-                padding: 0.7em 2em;
-                border-radius: 20px;
-                
-                
-            }
-
-            a:hover{
-                background-color: #000000;
-                color: #ffffff;
-            }
-            
-        }
-    }
-
-
+    margin-top:2em;
     
 }
 
-//Styling find us button
+//Styling  button
 .info-button {
-    margin-top: 3em;
+    margin-top: 1em;
     text-align: center;
-
-    
-
-       
 
             a {
                 font-size: 1.2em;
-                background-color: rgb(191,177,176);
-                color: #A63F48;
-                letter-spacing: 2px;
+                border: 5px solid #ffffff;
+                color: #ffffff;
+                letter-spacing: 4px;
                 text-transform: uppercase;
                 font-weight: 700;
                 text-decoration: none;
                 padding: 0.7em 2em;
                 border-radius: 20px;
+                font-family: 'Bree Serif', serif;
             }
             
             a:hover{
-                background-color: #A63F48;
-                color: rgb(191,177,176);
+                border: 0 solid transparent;
+                
             }
 
 }
@@ -103,29 +65,20 @@
 //Breakpoints
 @media only screen and (min-width: 600px){
   .hero-image{
-    min-height: 100vh;
-      h1{
-          font-size: 2em;
-      }
-
-      h2{
-          font-size: 1.5em;
-      }
+    min-height: 80vh;
   }
 }
 
 @media only screen and (min-width: 1200px){
-    .main-header{
-        display: flex;
-    }
+    .show-info {
+        margin: 2em;
 
-    .hero-image{
-        h1{
-            font-size: 2.2em;
-        }
-  
-        h2{
-            font-size: 1.8em;
+        .info-button {
+            margin: 3em;
+
+            a {
+                font-size: 2em;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ import './TrainsModel.scss';
 import MainFooter from '../../Components/Footer/Footer';
 import Navigation from '../../Components/Navigation/Navigation';
 import Gallery from '../../Components/Gallery/Gallery';
+import ReactHtmlParser from 'react-html-parser';
 
 
 
@@ -11,7 +12,14 @@ class TrainsModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [],
+            items: {
+                title:{
+                    rendered:''
+                },
+                content:{
+                    rendered:''
+                },
+            },
             isLoaded: false, //if the items is loaded
         }
     }
@@ -31,39 +39,33 @@ class TrainsModel extends Component {
 
     render() {
         var { isLoaded, items } = this.state; // can access to isLoaded and items in constructor method 
+        var content = items.content.rendered;
      
         
         if (!isLoaded) {
            return <div> Data is not loaded. Loading ...</div>;
         } else {
             return (
-                <div className="trainsModel-page">
-                    <div className="main-content">
-                        <div className="train-nav">
+                <div className="trainsModel">
+                    
+                        <div className="train-header">
                             <Navigation/>
 
                             <div className="caption">
                                 <h3>"Det finns cirka 500 meter räls i ett landskap med 660 hus, där den bereste hittar många kända miljöer. Tågen dra sav cirka 250 lok, från 50-talsmodeller till dagens snabbtåg. 600 vagnar."</h3>
                             </div>
                         </div>
-                        <div className="trains-content">
-                            <div className="train-title">
-                                <h1>{items.title.rendered}</h1>
-                            </div>
 
-                            <div className="sub-content">
-
-                                <div className="train-desc">
-                                    <p>{items.content.rendered}</p>
-                                </div>
-
-                            </div>
-
+                        <div className="main-content">
+                        
                             
+                                <h2>{items.title.rendered}</h2>
+                                <p className="train-desc"><p>{ ReactHtmlParser(content)}</p></p>
+
                         
                         </div>{/*TrainsModel-content*/}
                         <Gallery/>
-                    </div> {/*Main-content*/}
+                    
                     <MainFooter/>
             </div> 
             

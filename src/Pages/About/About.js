@@ -3,6 +3,7 @@ import './About.scss';
 import Navigation from '../../Components/Navigation/Navigation';
 import Footer from '../../Components/Footer/Footer';
 import Partners from '../../Components/Partners/Partners';
+import ReactHtmlParser from 'react-html-parser';
 
 
 
@@ -11,7 +12,14 @@ class About extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [],
+            items: {
+                title:{
+                    rendered:''
+                },
+                content:{
+                    rendered:''
+                },
+            },
             isLoaded: false, //if the items is loaded
         }
     }
@@ -36,7 +44,7 @@ class About extends Component {
 
     render() {
         var { isLoaded, items } = this.state; // can access to isLoaded and items in constructor method 
-        
+        var about = items.content.rendered;
      
         
         
@@ -44,29 +52,29 @@ class About extends Component {
            return <div> Data is not loaded. Loading ...</div>;
         } else {
             return (
-                <div className="About-page">
-                <div className="About-nav">
-                <Navigation/>
-                <div className="caption">
-                <h3>"Vi är familjen Sundberg och har samlat på leksakerna sedan 195o-talet.</h3>
-                </div>
-                </div>
-                    <div className="Main-content">
+                <div className="about">
+                    <div className="about-header">
+                        <Navigation/>
+                        <div className="caption">
+                            <h2>"Vi är familjen Sundberg och har samlat på leksakerna sedan 195o-talet.</h2>
+                        </div>
+                    </div>
+                    <div className="main-content">
                         
-                        <div className="About-content">
+                        {/* <div className="About-content"> */}
                                 <h1>{items.title.rendered}</h1>
                                 <div className="content1">
                                     <div className="content-row">
-                                        <p>{items.content.rendered}</p>
+                                        <p>{ ReactHtmlParser(about)}</p>
                                     </div>
                                     <div className="content-row">
                                 <img src={items._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} alt="Feature"/> 
                                 </div>
                                 </div>
-                                
-                            </div> {/*About-content*/}
+                    </div>{/*Main-content*/}        
+                            {/* </div> About-content */}
                             <Partners/>
-                    </div>{/*Main-content*/}
+                
                <Footer/>
                 </div> 
             );
