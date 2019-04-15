@@ -8,22 +8,27 @@
     margin-top:4em;
     margin-bottom: 4em;
 
+   
+
     .Review {
 
         .fa-user-circle {
             font-size: 2em;
+            
         }
         .Review-title {
             padding: 1em 0;
-            p {
+            
+            h5 {
                 text-transform: uppercase;
-                  
+                
             }
         }
 
         .Review-content {
             p{
                 text-align: justify;
+                
             }
         }
     }
@@ -49,6 +54,19 @@
         }
    
     
+}
+
+@media only screen and (min-width: 900px){
+    .Reviews {
+        .Review {
+            .Review-content {
+                p {
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 1200px) {

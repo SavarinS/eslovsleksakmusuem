@@ -6,6 +6,7 @@ import About from './Pages/About/About';
 import Collection from './Pages/Collection/Collection';
 import TrainsModel from './Pages/TrainsModel/TrainsModel';
 import Contact from './Pages/Contact/Contact';
+import NotFound from './Pages/NotFound/NotFound';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
           <Route path="/samligar" component={Collection} exact />
           <Route path="/modeljarnvagen" component={TrainsModel} exact />
           <Route path="/kontakt" component={Contact} exact />
-          {/* <Route component={NotFound}/> */}
+          <Route component={NotFound}/> 
 
         </Switch>
 

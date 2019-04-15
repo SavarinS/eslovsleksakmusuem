@@ -23,12 +23,12 @@ h3 {
   font-size: 1.2em;
 }
 
-// * {
-// 	border: 1px solid red;
-// }
+//  * {
+//  	border: 1px solid red;
+//  }
 
-p{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 3px;
   line-height: 300%;
   color: #000000;
@@ -56,30 +56,21 @@ p{
 }
 
 @media only screen and (min-width: 900px){
-  h1 {
-    font-size: 2.5em;
-  }
- h2 {
-   font-size: 2em;
- }
-
- h3 {
-   font-size: 1.5em;
- }
-
- p {
-  font-size: 1.2em;
- }
-}
-@media only screen and (min-width: 1200px){
+ 
   h1 {
     font-size: 3em;
   }
- h2 {
-   font-size: 2.5em;
- }
- h3 {
-  font-size: 2em;
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+ 
 }
+@media only screen and (min-width: 1200px){
+
 
 }

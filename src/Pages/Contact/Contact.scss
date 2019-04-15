@@ -82,6 +82,35 @@
             display:flex;
             justify-content: space-evenly;
             text-align: center;
+
+            .opening-time {
+                p {
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
+            .price {
+                p{
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
+        }
+
+        .column2 {
+            .contact-us {
+                p{
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
+
+            .address {
+                p{
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
         }
     
         

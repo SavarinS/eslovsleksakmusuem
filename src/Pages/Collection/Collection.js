@@ -55,7 +55,7 @@ class Collections extends Component {
                         {/* collections-header */}
                         <div className="main-collections-content">
                         
-                            <h1> Samligar </h1>
+                            <h2> Samligar </h2>
                         
                     
                         <div className="collections-content">

@@ -62,10 +62,10 @@ class About extends Component {
                     <div className="main-content">
                         
                         {/* <div className="About-content"> */}
-                                <h1>{items.title.rendered}</h1>
+                                <h2>{items.title.rendered}</h2>
                                 <div className="content1">
                                     <div className="content-row">
-                                        <p>{ ReactHtmlParser(about)}</p>
+                                        { ReactHtmlParser(about)}
                                     </div>
                                     <div className="content-row">
                                 <img src={items._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url} alt="Feature"/> 

@@ -27,7 +27,7 @@
 
 .main-content{
     padding:2em;
-    h1 {
+    h2 {
         text-align: center;
     }
     .content1 {
@@ -79,6 +79,12 @@
             
            .content-row {
                text-align: center;
+               padding: 2em;
+               
+               p {
+                   font-size: 1.5em;
+                   line-height: 300%;
+               }
                img{
                    width:50vw;
                }

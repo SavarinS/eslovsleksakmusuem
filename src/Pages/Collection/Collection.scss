@@ -28,9 +28,8 @@
     }
 
     .main-collections-content {
-        h1 {
+        h2 {
             text-align: center;
-            margin-top: 1em;
         }
 
         .collections-content {
@@ -79,6 +78,7 @@
 
                 .collection-desc {
                     margin-right: 2em;
+
                 }
             }
 
@@ -133,6 +133,8 @@
 
                         p {
                             text-align: justify;
+                            font-size: 1.4em;
+                            line-height: 300%;
                         }
                     }
                 }

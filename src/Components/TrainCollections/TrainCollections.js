@@ -15,9 +15,9 @@ class TrainCollection extends Component {
                 <div className="Description">
                     <h4>300 kvadratmeter modelljärnvägen</h4>
 
-                    <div className="to-page-model">
+                    {/* <div className="to-page-model">
                         <NavLink to="modeljarnvagen"><p>Modelljärnvägen</p></NavLink>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

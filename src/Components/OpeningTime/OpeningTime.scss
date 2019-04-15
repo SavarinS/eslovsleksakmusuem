@@ -1,12 +1,17 @@
 .Opening {
     text-align: center;
-    background-color: #D9D9D9;
+    //background-color: #f0f0d6;
     padding-bottom: 1em;
 
     .Opening-img {
         img {
             width:100%;
         }
+    }
+
+    .Opening-time{
+        margin:1em;
+        
     }
 }
 

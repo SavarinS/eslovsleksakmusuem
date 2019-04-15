@@ -56,7 +56,7 @@ class Contact extends Component {
                         <div className="main-content">
                         
                             
-                        <h1 className="title">{items.title.rendered}</h1>
+                        <h2 className="title">{items.title.rendered}</h2>
 <div className="column1">
                                     <div className="opening-time">
                                         <h3>Öppettid</h3>

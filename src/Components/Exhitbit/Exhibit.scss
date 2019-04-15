@@ -14,16 +14,7 @@
             font-style: bold;
         }
     }
-    .Exhibit-content {
-
-        .E-title {
-            text-transform: uppercase;
-            font-style: bold;
-            font-family: 'Coiny', cursive;
-        }
-
-        
-    }
+    
     
 }
 
@@ -38,5 +29,24 @@
 
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 900px) {
+    .Exhibit {
+
+        .Exhibit-title {
+            .fa-calendar-alt {
+                font-size: 4em;
+            }
+        }
+        .Exhibit-content {
+
+            .E-title {
+                p{
+                    font-size: 1.4em;
+                    line-height: 300%;
+                }
+            }
+    
+            
+        }
+    }
 }

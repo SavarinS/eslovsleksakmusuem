@@ -1,6 +1,7 @@
 .Slide {
     .Caption-Slide {
         padding: 2em;
+        
     }
 
     .Slide-button {
@@ -8,9 +9,11 @@
         margin: 1em;
         
         a{
+
+            color: #000000;
             p {
-                color: #ffffff;
-                background-color: #000000;
+                border: 4px solid #000000;
+                border-radius: 20px;
                 text-align: center;
                
             }
@@ -33,7 +36,25 @@
      width: 40vw;
     }
 }
+@media only screen and (min-width: 900px){
+    .Slide {
+        .Caption-Slide {
+            padding: 2em;
+            p{
+                font-size: 1.4em;
+                line-height: 300%;
+            }
+            
+        }
 
+        .Slide-button {
+            p{
+                font-size: 1.4em;
+                line-height: 300%;
+            }
+        }
+    }
+}
 @media only screen and (min-width: 1200px) {
     .Slide {
         display: flex;

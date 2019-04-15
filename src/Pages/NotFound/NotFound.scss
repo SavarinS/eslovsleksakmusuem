@@ -1,0 +1,99 @@
+//NotFound page
+.not-found {
+    padding:0;
+    margin:0;
+    
+    
+
+   
+
+    .NotFound-content{
+        text-align: center;
+        padding: 2em;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+        h2, h3 {
+            margin:1em;
+        }
+    
+        .img-train {
+            width:100%;
+            
+
+            img {
+                width:100%;
+            }
+        }
+    
+        .NotFound-sub{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top:1em;
+            align-items: center;
+    
+            a{
+                font-weight: bold; 
+                padding: 0.8em;
+                border: 4px solid #000000;
+                border-radius: 20px;
+                margin: 1em;
+                
+            }
+    
+    
+            a:hover{
+                text-decoration: none;
+                background-color: #000000;
+                
+                
+    
+            }
+    
+            p{
+                margin-bottom: 0;
+            }
+    
+            p:hover{
+                color: #ffffff;
+            }
+            
+        }
+    }
+}
+
+
+//Break points
+@media only screen and (min-width: 600px){
+    .not-found{
+        .NotFound-content {
+
+            padding:5em;
+           
+
+            .img-train {
+                width: 50vw;
+                
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .not-found{
+        .NotFound-content {
+
+          
+           
+
+            .img-train {
+                width: 30vw;
+ 
+            }
+        }
+    }
+}
