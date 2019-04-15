@@ -64,6 +64,7 @@
     .navbar {
         flex-flow: row wrap;
         padding: 24px 0 24px 0;
+        align-items: baseline;
 
         a {
             font-size: 1em;
@@ -87,8 +88,8 @@
     .navbar {
         align-items: baseline;
         a {
-            font-size: 1.5em;
-            padding: 0 2em 0 2em;
+            font-size: 1.2em;
+            //padding: 0 2em 0 2em;
         }
         .navbar-collapse {
             justify-content: center;          

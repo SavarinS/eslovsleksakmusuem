@@ -38,7 +38,7 @@ class Review extends Component {
             
             return (
                 <div className="Reviews">
-                    <h3>Vad tycker besökarna</h3>
+                    <h4>Vad tycker besökarna</h4>
                     <div className="Review-col">
                 {this.state.items.map (review => {
                     return (

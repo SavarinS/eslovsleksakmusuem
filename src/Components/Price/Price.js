@@ -11,8 +11,8 @@ class Price extends Component {
                 </div>
 
                 <div className="Price-info">
-                    <h4>Entré: Vuxna 60 SEK</h4>
-                    <h4>Barn & ungdom (5-15 år) 30 SEK</h4>
+                    <h6>Entré: Vuxna 60 SEK</h6>
+                    <h6>Barn & ungdom (5-15 år) 30 SEK</h6>
                 </div>
             </div>
         )

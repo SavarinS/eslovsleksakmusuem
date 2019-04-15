@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Trains from '../../img/Trains.jpg';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 import './TrainCollections.scss';
 
 class TrainCollection extends Component {
@@ -13,7 +13,7 @@ class TrainCollection extends Component {
                 </div>
 
                 <div className="Description">
-                    <h4>300 kvadratmeter modelljärnvägen</h4>
+                    <h6>300 kvadratmeter modelljärnvägen</h6>
 
                     {/* <div className="to-page-model">
                         <NavLink to="modeljarnvagen"><p>Modelljärnvägen</p></NavLink>
