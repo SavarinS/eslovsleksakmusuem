@@ -52,14 +52,14 @@ class TrainsModel extends Component {
                             <Navigation/>
 
                             <div className="caption">
-                                <h3>"Det finns cirka 500 meter räls i ett landskap med 660 hus, där den bereste hittar många kända miljöer. Tågen dra sav cirka 250 lok, från 50-talsmodeller till dagens snabbtåg. 600 vagnar."</h3>
+                                <h4>"Det finns cirka 500 meter räls i ett landskap med 660 hus, där den bereste hittar många kända miljöer. Tågen dra sav cirka 250 lok, från 50-talsmodeller till dagens snabbtåg. 600 vagnar."</h4>
                             </div>
                         </div>
 
                         <div className="main-content">
                         
                             
-                                <h2>{items.title.rendered}</h2>
+                                <h4>{items.title.rendered}</h4>
                                 <p className="train-desc"><p>{ ReactHtmlParser(content)}</p></p>
 
                         

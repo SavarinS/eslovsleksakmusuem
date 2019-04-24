@@ -15,7 +15,7 @@
     
         .caption {
             text-align: justify;
-            h3 {
+            h4 {
                 color: #ffffff;
                 letter-spacing: 4px;
                 line-height: 200%;
@@ -24,7 +24,7 @@
     }
 
     .main-content {
-        h2 {
+        h4 {
             text-align: center;
         }
         p {
@@ -69,7 +69,6 @@
        column-fill: auto;
 
        p {
-           font-size: 1.2em;
            line-height: 300%;
        }
    }
@@ -81,7 +80,8 @@
         .train-header{
             min-height: 50vh;
             .caption {
-                padding: 2.5em;
+                width: 60vw;
+                padding: 1.5em;
                 text-align: justify;
         
             }

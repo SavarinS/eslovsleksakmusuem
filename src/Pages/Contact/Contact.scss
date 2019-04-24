@@ -3,7 +3,13 @@
     padding:0;
     margin: 0;
 
-
+.column2 {
+    .address {
+        p{
+            text-align: justify;
+        }
+    }
+}
 .contact-header {
     background-image: url('../../img/claudio-luiz-castro-1394287-unsplash.jpg');
     min-height: 30vh;
@@ -20,7 +26,7 @@
         flex-wrap: wrap;
         margin-top:2em;
 
-        h3 {
+        h4 {
             color: #ffffff;
             letter-spacing: 4px;
             
@@ -34,7 +40,7 @@
         border-bottom-style: solid;
         margin-bottom:2em;
 
-        h3 {
+        h5 {
             text-align: center;
         }
     } 
@@ -54,7 +60,7 @@
 
         .caption {
             
-            h3 {
+            h4 {
                 text-align: center;
             }
         }
@@ -85,13 +91,11 @@
 
             .opening-time {
                 p {
-                    font-size: 1.4em;
                     line-height: 300%;
                 }
             }
             .price {
                 p{
-                    font-size: 1.4em;
                     line-height: 300%;
                 }
             }
@@ -100,14 +104,12 @@
         .column2 {
             .contact-us {
                 p{
-                    font-size: 1.4em;
                     line-height: 300%;
                 }
             }
 
             .address {
                 p{
-                    font-size: 1.4em;
                     line-height: 300%;
                 }
             }

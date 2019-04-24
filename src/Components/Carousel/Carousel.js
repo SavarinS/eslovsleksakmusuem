@@ -36,7 +36,7 @@ class Slideshow extends Component {
                 </div>
 
                 <div className="Slide-button">
-                <NavLink to="/galleri"><p>Galleri</p></NavLink>
+                <NavLink to="/modeljarnvagen"><p>Galleri</p></NavLink>
                 </div>
 
             </div>

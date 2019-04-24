@@ -3,6 +3,7 @@ import './Contact.scss';
 import Navigation from '../../Components/Navigation/Navigation';
 import ReactHtmlParser from 'react-html-parser';
 import Footer from '../../Components/Footer/Footer';
+//import Loading from '../Loading/Loading';
 
 
 class Contact extends Component {
@@ -41,7 +42,7 @@ class Contact extends Component {
         
         
         if (!isLoaded) {
-           return <div> Data is not loaded. Loading ...</div>;
+           return <h4>Data är inte laddad. Läser in</h4>
         } else {
             return (
                 <div className="contact">
@@ -49,29 +50,29 @@ class Contact extends Component {
                             <div className="contact-header">
                                 <Navigation/>
                                 <div className="caption">
-                                    <h3>Du hittar oss på Kvarngatan 25,200 meter från Eslövs station</h3>
+                                    <h4>Du hittar oss på Kvarngatan 25,200 meter från Eslövs station</h4>
                                 </div>
                             </div>{/* contact-header */}
 
                         <div className="main-content">
                         
                             
-                        <h2 className="title">{items.title.rendered}</h2>
+                        <h4 className="title">{items.title.rendered}</h4>
 <div className="column1">
                                     <div className="opening-time">
-                                        <h3>Öppettid</h3>
+                                        <h5>Öppettid</h5>
                                         <p>onsdag - lödag kl.12 - 16</p>
                                     </div>
 
                                     <div className="price">
-                                        <h3>Pris</h3>
+                                        <h5>Pris</h5>
                                         <p>Vuxna 60 SEK</p>
                                         <p>Barn och ungdom (5-15 år) 30 SEK</p>
                                     </div>
                                     </div>
                                 <div className="column2">
                                     <div className="contact-us">
-                                        <h3>Kontakta oss</h3>
+                                        <h5>Kontakta oss</h5>
                                         <p>Telefon: 0413-149 90 eller 0738-29 48 40</p>
                                         <p>Mail: info@eslovsleksakmuseum.se</p>
                                     </div>
@@ -80,7 +81,7 @@ class Contact extends Component {
                                     
 
                                     <div className="address">
-                                        <h3>Adress</h3>
+                                        <h5>Adress</h5>
                                         <p>Kvarngatan 25</p>
                                         { ReactHtmlParser(content)}
                                     </div>

@@ -12,7 +12,7 @@ class Activity extends Component {
                         
                         <div className="Activity-title">
                         <i className="fa fa-cubes"></i>
-                            <h4>Aktiviteter</h4>
+                            <h5>Aktiviteter</h5>
                         </div>
                         <div className="Activity-content">
                             

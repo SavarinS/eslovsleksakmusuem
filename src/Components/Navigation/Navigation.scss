@@ -69,6 +69,8 @@
         a {
             font-size: 1em;
             padding: 1em;
+            padding: 0;
+            margin-right: 1.2em;
             
 
         }
@@ -87,12 +89,13 @@
 @media (min-width: 1200px){
     .navbar {
         align-items: baseline;
+        
         a {
             font-size: 1.2em;
             //padding: 0 2em 0 2em;
         }
         .navbar-collapse {
-            justify-content: center;          
+            justify-content: flex-end;          
         }
     }
 }

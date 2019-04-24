@@ -40,7 +40,7 @@ class Header extends Component {
                         <Navigation/>
                             <div className="hero-image">
                                 <div className="hero-text">
-                                    <h4>Drömer du också om att bli barn på nytt!</h4>
+                                    <h4>Drömmer du också om att bli barn på nytt!</h4>
                                     <h4>Välkomen till</h4>
                                     <h3>Eslöv Leksakmusuem</h3>
                                     
@@ -66,7 +66,7 @@ class Header extends Component {
                                 <Navigation/>
                             <div className="hero-image">
                                 <div className="hero-text">
-                                    <h4>Drömer du också om att bli barn på nytt!</h4>
+                                    <h4>Drömmer du också om att bli barn på nytt!</h4>
                                     <h4>Välkomen till</h4>
                                     <h3>Eslöv Leksakmusuem</h3>
                                     {/* <h1>It's now {this.state.hour} : {this.state.minutes}</h1> */}

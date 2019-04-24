@@ -5,7 +5,7 @@ class Partners extends Component {
     render (){
         return (
             <div className="partners">
-                <h3>Våra partners</h3>
+                <h4>Våra partners</h4>
                 <div className="partners-list">
                     <div className="name">
                         <i class="fas fa-cat"></i>

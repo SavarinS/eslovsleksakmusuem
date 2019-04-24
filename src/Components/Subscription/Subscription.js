@@ -7,7 +7,7 @@ class Subscription extends Component {
         return (
             <div className="Subscription">
                 <div className="Sub-header">
-                    <h3>Registrear dig för nyhetsbrev</h3>
+                    <h4>Registrear dig för nyhetsbrev</h4>
                 </div>
                 <div className="Sub-form">
                 <Form>

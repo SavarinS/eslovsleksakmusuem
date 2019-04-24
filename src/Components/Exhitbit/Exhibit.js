@@ -12,7 +12,7 @@ class Exhibit extends Component {
                         
                         <div className="Exhibit-title">
                         <i className="fa fa-calendar-alt"></i>
-                            <h4>Utställningar</h4>
+                            <h5>Utställningar</h5>
                         </div>
 
                         <div className="Exhibit-content">

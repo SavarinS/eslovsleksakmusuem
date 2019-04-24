@@ -56,13 +56,13 @@ class About extends Component {
                     <div className="about-header">
                         <Navigation/>
                         <div className="caption">
-                            <h2>"Vi är familjen Sundberg och har samlat på leksakerna sedan 195o-talet.</h2>
+                            <h4>"Vi är familjen Sundberg och har samlat på leksakerna sedan 195o-talet."</h4>
                         </div>
                     </div>
                     <div className="main-content">
                         
                         {/* <div className="About-content"> */}
-                                <h2>{items.title.rendered}</h2>
+                                <h4>{items.title.rendered}</h4>
                                 <div className="content1">
                                     <div className="content-row">
                                         { ReactHtmlParser(about)}

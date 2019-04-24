@@ -49,13 +49,13 @@ class Collections extends Component {
                             <Navigation/>
 
                             <div className="caption">
-                                <h3>500 meter modelljärnväg, 400 Barbiedockor, 4 000 modellbilar, 9 000 tennsoldater och 1 500 uppbyggda Legosatser.</h3>
+                                <h4>500 meter modelljärnväg, 400 Barbiedockor, 4 000 modellbilar, 9 000 tennsoldater och 1 500 uppbyggda Legosatser.</h4>
                             </div>
                         </div>
                         {/* collections-header */}
                         <div className="main-collections-content">
                         
-                            <h2> Samligar </h2>
+                            <h4> Samligar </h4>
                         
                     
                         <div className="collections-content">
@@ -66,7 +66,7 @@ class Collections extends Component {
                                     <div key={post.id} className="collection-list">
                                         <div className="collection-row">
                                             <div className="title">
-                                                <h3>{post.title.rendered} </h3>
+                                                <h5>{post.title.rendered} </h5>
                                             </div>
 
                                             <div className="collection-desc">
