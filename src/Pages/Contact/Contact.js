@@ -42,7 +42,7 @@ class Contact extends Component {
         
         
         if (!isLoaded) {
-           return <h4>Data är inte laddad. Läser in</h4>
+           return <div><p>Page is loading. Please wait.</p></div>
         } else {
             return (
                 <div className="contact">

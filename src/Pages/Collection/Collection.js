@@ -40,7 +40,7 @@ class Collections extends Component {
         
 
         if (!isLoaded) {
-           return <div> Data is not loaded. Loading ...</div>;
+           return <div> <p>Page is loading. Please wait.</p></div>;
         } else {
             return (
                 <div className="collections">
