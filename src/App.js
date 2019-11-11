@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename="/examensarbete2019">
         <div className="full-width-container">
         <Switch>
           <Route path="/" component={Home} exact />
