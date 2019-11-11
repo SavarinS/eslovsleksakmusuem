@@ -25,6 +25,7 @@ class Home extends Component {
 
             return (
                 <div id="home">
+                    
                 <Headers/>
                 <Collections/>
                 <Review/>

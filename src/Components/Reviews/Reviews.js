@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Review.scss';
+import ReactHtmlParser from 'react-html-parser';
 
 
 class Review extends Component {
@@ -12,7 +13,7 @@ class Review extends Component {
     }
     // life cycle method
     componentDidMount(){
-        fetch('https://eslovsleksakmuseum.beehiveinthewood.one/wp-json/wp/v2/posts?categories=187', {
+        fetch('https://leksakmuseum.beehiveinthewood.one/wp-json/wp/v2/posts?categories=4', {
             headers: {
                 'Content-Type': 'text/html; charset=utf-8'
             }
@@ -32,6 +33,7 @@ class Review extends Component {
     render (){
         var { isLoaded } = this.state; // can access to isLoaded and items in constructor method 
         
+
         if (!isLoaded) {
            return <div> Data is not loaded. Loading ...</div>;
         } else {
@@ -41,6 +43,7 @@ class Review extends Component {
                     <h4>Vad tycker besökarna</h4>
                     <div className="Review-col">
                 {this.state.items.map (review => {
+
                     return (
                         
                             <div className="Review" key={review.id}>
@@ -50,7 +53,9 @@ class Review extends Component {
                                         <h5>{review.title.rendered}</h5>
                                     </div>
                                     <div className="Review-content">
-                                        <p>{review.excerpt.rendered}</p>
+                                    
+                                    { ReactHtmlParser(review.content.rendered)}
+                                   
                                     </div>
                                 </div>
                             

@@ -25,7 +25,7 @@ class About extends Component {
     }
 // life cycle method
     componentDidMount(){
-            fetch( 'https://eslovsleksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/1904?_embed=true') //fetch method - link that want to fetch data
+            fetch( 'https://leksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/362?_embed=true') //fetch method - link that want to fetch data
             //'https://jsonplaceholder.typicode.com/users'
                 
                 .then(res => res.json()) //get the result and transform it to Json format

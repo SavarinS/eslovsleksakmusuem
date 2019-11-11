@@ -24,7 +24,7 @@ class Contact extends Component {
 
     // life cycle method
     componentDidMount(){
-        fetch('https://eslovsleksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/1908?_embed=true') //fetch method - link that want to fetch data
+        fetch('https://leksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/335?_embed=true') //fetch method - link that want to fetch data
         //'https://jsonplaceholder.typicode.com/users'
             .then(res => res.json()) //get the result and transform it to Json format
             .then(json => { //create error function  

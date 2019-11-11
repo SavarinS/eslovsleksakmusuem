@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './TrainsModel.scss';
 import MainFooter from '../../Components/Footer/Footer';
 import Navigation from '../../Components/Navigation/Navigation';
-import Gallery from '../../Components/Gallery/Gallery';
+//import Gallery from '../../Components/Gallery/Gallery';
 import ReactHtmlParser from 'react-html-parser';
 
 
@@ -25,7 +25,7 @@ class TrainsModel extends Component {
     }
 // life cycle method
     componentDidMount(){
-            fetch('https://eslovsleksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/1906?_embed=true') //fetch method - link that want to fetch data
+            fetch('https://leksakmuseum.beehiveinthewood.one/wp-json/wp/v2/pages/348?_embed=true') //fetch method - link that want to fetch data
             //'https://jsonplaceholder.typicode.com/users'
                 .then(res => res.json()) //get the result and transform it to Json format
                 .then(json => { //create error function  
@@ -60,11 +60,11 @@ class TrainsModel extends Component {
                         
                             
                                 <h4>{items.title.rendered}</h4>
-                                <p className="train-desc"><p>{ ReactHtmlParser(content)}</p></p>
+                                <p className="train-desc">{ ReactHtmlParser(content)}</p>
 
                         
                         </div>{/*TrainsModel-content*/}
-                        <Gallery/>
+                        {/* <Gallery/> */}
                     
                     <MainFooter/>
             </div> 
