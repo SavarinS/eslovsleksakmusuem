@@ -6,4 +6,4 @@ I combine my interest in Headless CMS and design. The method I used in the proje
 	The website that I choose is a toy museum in Eslöv and I intend to use it as an exercise. Therefore, the website is uploaded on my server. 
   
 To access to my project: https://eslovsleksaksmuseum.beehiveinthewood.one.
-To read my report: find in Documentation.
+To read my report: find rapport-Savarin file.
